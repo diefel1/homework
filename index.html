@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>   
-   <head>
+<html>
+
+<head>
     <title>Про мене</title>
-   </head>    
-   <body>
-    <h1>Про мене</h1>
-    <p>Мене звати Надія, я з міста Києва. Мені 28 років. Маю мету стати інженером з автоматизації тестування, щоб знайти гарну роботу й назбирати кошти на свої мрії.</p>
-    <img src="photo/mehomework.jpg" alt="Моє фото">
-        <h2>Мої інтереси</h2>
-    <ul>
-        <li>Малювання</li>
-        <li>Екстремальне катання на роликах</li>
-        <li>Подорожі</li>
-        <li>Робота з комп'ютером</li>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <ul class="navigation">
+        <li><a href="index.html"> Головна</a></li>
+        <li><a href="pages/contact.html"> Контакти</a></li>
+        <li><a href="pages/gallery.html"> Галерея</a></li>
     </ul>
-    <ul> 
-<li><a href ="index.html"> Головна</a></li>
-<li><a href ="pages/contact.html"> Контакти</a></li>
-<li><a href ="pages/gallery.html"> Галерея</a></li>
-</ul>
-   </body>
+    <div class="about">
+        <div class="about-text">
+            <h1 id="main-title">Про мене</h1>
+            <p class="description">Мене звати Надія, я з міста Києва. Мені 28 років. Маю мету стати інженером з
+                автоматизації тестування, щоб знайти гарну роботу й назбирати кошти на свої мрії.</p>
+        </div>
+        <img src="photo/mehomework.jpg" alt="Моє фото" class="main-photo">
+    </div>
+    <div class="interests-card">
+        <h2 class="interests-title">Мої інтереси</h2>
+        <ul class="interests-list">
+            <li>Малювання</li>
+            <li>Екстремальне катання на роликах</li>
+            <li>Подорожі</li>
+            <li>Робота з комп'ютером</li>
+        </ul>
+    </div>
+
+</body>
+
 </html>

@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>Галерея</title>
-    </head>
-   <body>
-    <h1>Моя Галерея</h1>
-    <li><a href ="../index.html"> Головна</a></li>
-    <li><a href ="contact.html"> Контакти</a></li>
-    <li><a href ="gallery.html"> Галерея</a></li>
-    <h2>Моменти мого життя</h2>
-    <p>Моя подорож в Монтенегро, улюблена киця Аскар й просто я </p>
-   <img src="../photo/Askar.jpg" alt="Моя киця">
-   <img src="../photo/me2.jpg" alt="Монтенегро я серед пальм й гор">
-   <img src="../photo/me3.jpg" alt="Я руда">
-   <img src="../photo/me4.jpg" alt="я в повний зріст">  
-   <ul> 
-</ul>
-   </body>
-   </html>
+
+<head>
+    <title>Галерея</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <ul class="navigation">
+        <li><a href="../index.html"> Головна</a></li>
+        <li><a href="contact.html"> Контакти</a></li>
+        <li><a href="gallery.html"> Галерея</a></li>
+    </ul>
+    <div class="gallery-card">
+        <h1 id="gallery-title">Моя Галерея</h1>
+        <h2 class="gallery-subtitle">Моменти мого життя</h2>
+        <p class="description">Моя подорож в Монтенегро, улюблена киця Аскар й просто я </p>
+        <div class="gallery-photos">
+            <a href="#lightbox1"><img id="photo1" src="../photo/Askar.jpg" alt="Моя киця" class="photo"></a>
+            <a href="#lightbox2"><img id="photo2" src="../photo/me2.jpg" alt="Монтенегро я серед пальм й гор"
+                    class="photo"></a>
+            <a href="#lightbox3"><img id="photo3" src="../photo/me4.jpg" alt="я в повний зріст" class="photo"></a>
+            <a href="#lightbox4"><img id="photo4" src="../photo/me3.jpg" alt="Я руда" class="cat-photo"></a>
+        </div>
+        <div id="lightbox1">
+            <img id="large-photo1" src="../photo/Askar.jpg" alt="Моя киця">
+            <a href="#gallery-title" class="lightbox-close">✕</a>
+            <a href="#lightbox2" class="lightbox-next">→</a>
+            <a href="#lightbox4" class="lightbox-prev">←</a>
+        </div>
+        <div id="lightbox2">
+            <img id="large-photo2" src="../photo/me2.jpg" alt="Монтенегро я серед пальм й гор">
+            <a href="#gallery-title" class="lightbox-close">✕</a>
+            <a href="#lightbox3" class="lightbox-next">→</a>
+            <a href="#lightbox1" class="lightbox-prev">←</a>
+        </div>
+
+        <div id="lightbox3">
+            <img id="large-photo3" src="../photo/me4.jpg" alt="я в повний зріст">
+            <a href="#gallery-title" class="lightbox-close">✕</a>
+            <a href="#lightbox4" class="lightbox-next">→</a>
+            <a href="#lightbox2" class="lightbox-prev">←</a>
+        </div>
+
+        <div id="lightbox4">
+            <img id="large-photo4" src="../photo/me3.jpg" alt="Я руда">
+            <a href="#gallery-title" class="lightbox-close">✕</a>
+            <a href="#lightbox1" class="lightbox-next">→</a>
+            <a href="#lightbox3" class="lightbox-prev">←</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
